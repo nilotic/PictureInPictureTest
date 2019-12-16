@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B764B75D23A7066500760E2A /* DampedHarmonicSpring.swift in Sources */ = {isa = PBXBuildFile; fileRef = B764B75C23A7066500760E2A /* DampedHarmonicSpring.swift */; };
+		B764B75F23A70D8C00760E2A /* CGPointExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B764B75E23A70D8C00760E2A /* CGPointExtension.swift */; };
 		B7B4EBEF23A6376900B3CD32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B4EBEE23A6376900B3CD32 /* AppDelegate.swift */; };
 		B7B4EBF123A6376900B3CD32 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B4EBF023A6376900B3CD32 /* SceneDelegate.swift */; };
 		B7B4EBF323A6376900B3CD32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B4EBF223A6376900B3CD32 /* ViewController.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B764B75C23A7066500760E2A /* DampedHarmonicSpring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DampedHarmonicSpring.swift; sourceTree = "<group>"; };
+		B764B75E23A70D8C00760E2A /* CGPointExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPointExtension.swift; sourceTree = "<group>"; };
 		B7B4EBEB23A6376900B3CD32 /* PIPTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PIPTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7B4EBEE23A6376900B3CD32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7B4EBF023A6376900B3CD32 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 				B7B4EBEE23A6376900B3CD32 /* AppDelegate.swift */,
 				B7B4EBF023A6376900B3CD32 /* SceneDelegate.swift */,
 				B7B4EBF223A6376900B3CD32 /* ViewController.swift */,
+				B764B75C23A7066500760E2A /* DampedHarmonicSpring.swift */,
+				B764B75E23A70D8C00760E2A /* CGPointExtension.swift */,
 				B7B4EC0423A63A0400B3CD32 /* Model */,
 				B7B4EBF423A6376900B3CD32 /* Main.storyboard */,
 				B7B4EBF723A6376900B3CD32 /* Assets.xcassets */,
@@ -152,11 +158,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B764B75D23A7066500760E2A /* DampedHarmonicSpring.swift in Sources */,
 				B7B4EBF323A6376900B3CD32 /* ViewController.swift in Sources */,
 				B7B4EBEF23A6376900B3CD32 /* AppDelegate.swift in Sources */,
 				B7B4EC0323A6396C00B3CD32 /* PictureInPictureState.swift in Sources */,
 				B7B4EBF123A6376900B3CD32 /* SceneDelegate.swift in Sources */,
 				B7B4EC0623A63B0700B3CD32 /* PictureInPicturePoint.swift in Sources */,
+				B764B75F23A70D8C00760E2A /* CGPointExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

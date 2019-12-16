@@ -6,11 +6,11 @@
 //  Copyright © 2019 Den Jo. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 enum PictureInPicturePoint: CaseIterable {
-       case topLeft
-       case topRight
-       case bottomLeft
-       case bottomRight
-   }
+    case topLeft
+    case topRight
+    case bottomLeft
+    case bottomRight
+}
