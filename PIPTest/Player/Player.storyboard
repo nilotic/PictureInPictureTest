@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Player View Controller-->
+        <scene sceneID="fBY-oP-vLp">
+            <objects>
+                <viewController storyboardIdentifier="PlayerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HC8-8f-NHS" customClass="PlayerViewController" customModule="PIPTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="7GQ-TX-Vne">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tiz-CG-YVp">
+                                <rect key="frame" x="189.5" y="430.5" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="2EG-er-8gv"/>
+                                    <constraint firstAttribute="width" secondItem="Tiz-CG-YVp" secondAttribute="height" multiplier="1:1" id="PKx-3p-lcg"/>
+                                </constraints>
+                                <state key="normal" image="playIcon">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQA-e7-Whb">
+                                <rect key="frame" x="234.5" y="430.5" width="35" height="35"/>
+                                <state key="normal" image="nextIcon">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CjX-n0-9SR">
+                                <rect key="frame" x="144.5" y="430.5" width="35" height="35"/>
+                                <state key="normal" image="previousIcon">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="CjX-n0-9SR" firstAttribute="centerY" secondItem="Tiz-CG-YVp" secondAttribute="centerY" id="0kh-tf-Fe8"/>
+                            <constraint firstItem="HQA-e7-Whb" firstAttribute="width" secondItem="Tiz-CG-YVp" secondAttribute="width" id="66a-K3-haQ"/>
+                            <constraint firstItem="Tiz-CG-YVp" firstAttribute="leading" secondItem="CjX-n0-9SR" secondAttribute="trailing" constant="10" id="C7Y-K1-hq5"/>
+                            <constraint firstItem="HQA-e7-Whb" firstAttribute="height" secondItem="Tiz-CG-YVp" secondAttribute="height" id="ODd-U9-JmD"/>
+                            <constraint firstItem="HQA-e7-Whb" firstAttribute="centerY" secondItem="Tiz-CG-YVp" secondAttribute="centerY" id="W8Y-xS-b1l"/>
+                            <constraint firstItem="Tiz-CG-YVp" firstAttribute="centerY" secondItem="7GQ-TX-Vne" secondAttribute="centerY" id="WkU-ld-n3O"/>
+                            <constraint firstItem="Tiz-CG-YVp" firstAttribute="centerX" secondItem="7GQ-TX-Vne" secondAttribute="centerX" id="qhd-NN-bL3"/>
+                            <constraint firstItem="CjX-n0-9SR" firstAttribute="width" secondItem="Tiz-CG-YVp" secondAttribute="width" id="u1h-xS-jHB"/>
+                            <constraint firstItem="HQA-e7-Whb" firstAttribute="leading" secondItem="Tiz-CG-YVp" secondAttribute="trailing" constant="10" id="vSt-Lt-Zhe"/>
+                            <constraint firstItem="CjX-n0-9SR" firstAttribute="height" secondItem="Tiz-CG-YVp" secondAttribute="height" id="wUo-o2-nH6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dic-zr-LJx"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Ly-Sc-t6u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1520" y="393"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="nextIcon" width="162" height="156"/>
+        <image name="playIcon" width="153" height="153"/>
+        <image name="previousIcon" width="153" height="153"/>
+    </resources>
+</document>

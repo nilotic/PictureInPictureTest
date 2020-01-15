@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  PIPViewController.swift
 //  PIPTest
 //
 //  Created by Den Jo on 2019/12/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class ViewController: UIViewController {
+final class PIPViewController: UIViewController {
 
     // MARK: - IBOutlet
     @IBOutlet private var topLeftView: UIView!
@@ -75,7 +75,6 @@ final class ViewController: UIViewController {
         gradient.frame      = pictureInPictureView.bounds
         gradient.startPoint = CGPoint(x: 0, y: 0)
         gradient.endPoint   = CGPoint(x: 1.0, y: 1.0)
-        gradient.frame      = pictureInPictureView.bounds
         gradient.colors     = [#colorLiteral(red: 0.95, green: 0.93, blue: 0.16, alpha: 1).cgColor, #colorLiteral(red: 0.97, green: 0.67, blue: 0.16, alpha: 1).cgColor]
               
         pictureInPictureView.layer.addSublayer(gradient)
