@@ -95,7 +95,7 @@ final class PIPViewController: UIViewController {
     private func updateInteractiveTransition(with gesture: UIPanGestureRecognizer) {
         guard case .interaction(with: gesture, from: let startPoint) = state else { return }
         
-        let scale = fmax(traitCollection.displayScale, 1)
+        let scale = fmax(traitCollection.displayScale, 1.0)
         let translation = gesture.translation(in: view)
         
         var center = CGPoint(x: startPoint.x + translation.x, y: startPoint.y + translation.y)
@@ -134,7 +134,7 @@ final class PIPViewController: UIViewController {
             velocity.y *= abs(velocity.y / velocityInPrimaryDirection)
         }
         
-        let factor            = -1 / (1000 * log(UIScrollView.DecelerationRate.normal.rawValue))
+        let factor            = -1.0 / (1000.0 * log(UIScrollView.DecelerationRate.normal.rawValue))
         let projectedPosition = CGPoint(x: currentPosition.x + factor * velocity.x, y: currentPosition.y + factor * velocity.y)
         
         let sorted = PictureInPicturePoint.allCases.map { ($0, projectedPosition.distance(to: CGPoint(x: frame(for: $0).midX, y: frame(for: $0).midY))) }.sorted { $0.1 < $1.1 }
@@ -144,7 +144,7 @@ final class PIPViewController: UIViewController {
     private func frame(for point: PictureInPicturePoint) -> CGRect {
         let insets = UIEdgeInsets(top: 20.0, left: 20.0, bottom: 20.0, right: 20.0)
         let rect = view.safeAreaLayoutGuide.layoutFrame.inset(by: insets)
-        let size = CGSize(width: 100.0, height: 150.0)
+        let size = CGSize(width: 150.0, height: 100.0)
         
         switch point {
         case .topLeft:      return CGRect(x: rect.minX, y: rect.minY, width: size.width, height: size.height).standardized

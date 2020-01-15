@@ -15,25 +15,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CjX-n0-9SR">
+                                <rect key="frame" x="144.5" y="430.5" width="35" height="35"/>
+                                <state key="normal" image="previousIcon">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tiz-CG-YVp">
                                 <rect key="frame" x="189.5" y="430.5" width="35" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="35" id="2EG-er-8gv"/>
                                     <constraint firstAttribute="width" secondItem="Tiz-CG-YVp" secondAttribute="height" multiplier="1:1" id="PKx-3p-lcg"/>
                                 </constraints>
-                                <state key="normal" image="playIcon">
+                                <state key="normal" image="stopIcon">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <state key="selected" image="playIcon"/>
+                                <connections>
+                                    <action selector="playButtonTouchUpInside:" destination="HC8-8f-NHS" eventType="touchUpInside" id="hpH-zc-tHf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQA-e7-Whb">
                                 <rect key="frame" x="234.5" y="430.5" width="35" height="35"/>
                                 <state key="normal" image="nextIcon">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CjX-n0-9SR">
-                                <rect key="frame" x="144.5" y="430.5" width="35" height="35"/>
-                                <state key="normal" image="previousIcon">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
@@ -62,5 +66,6 @@
         <image name="nextIcon" width="162" height="156"/>
         <image name="playIcon" width="153" height="153"/>
         <image name="previousIcon" width="153" height="153"/>
+        <image name="stopIcon" width="154" height="154"/>
     </resources>
 </document>

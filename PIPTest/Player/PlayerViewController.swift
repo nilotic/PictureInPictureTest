@@ -24,6 +24,7 @@ final class PlayerViewController: UIViewController {
     }()
     
     
+    
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,8 +32,13 @@ final class PlayerViewController: UIViewController {
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-
         gradient.bounds = view.bounds
-        print(view.bounds)
+    }
+        
+    
+    
+    // MARK: - Event
+    @IBAction private func playButtonTouchUpInside(_ sender: UIButton) {
+        sender.isSelected = !sender.isSelected
     }
 }
