@@ -18,8 +18,8 @@ final class TabBarViewController: UITabBarController {
     // MARK: - Value
     // MARK: Private
     private var state: PictureInPictureState = .idle(at: .bottomRight)
-    private let spring = DampedHarmonicSpring(dampingRatio: 0.75, frequencyResponse: 0.25)
-    
+    private let spring = DampedHarmonicSpring(dampingRatio: 0.75, frequencyResponse: 0.5)
+  
     private lazy var playerContainerView: UIView = {
         guard let playerViewController = UIStoryboard(name: "Player", bundle: nil).instantiateViewController(withIdentifier: "PlayerViewController") as? PlayerViewController else { return UIView() }
         playerViewController.view.translatesAutoresizingMaskIntoConstraints = false
